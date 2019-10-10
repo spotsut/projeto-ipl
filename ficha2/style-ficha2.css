@@ -24,13 +24,16 @@ body{
 .link-menu{
 padding: 0.7% 5% 0.7% 5%;
 margin-left: 5%;
+
   background-color: green;
     color: white;
     text-decoration: none;
 
 }
 .link-menu:hover{
+transition: 0.5s;
   opacity: 0.5;
+border-radius: 5px;
 }
 .texto{
   width: 70%;
