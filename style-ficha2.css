@@ -22,7 +22,7 @@ body{
 
 }
 .link-menu{
-padding: 10px 70px 10px 70px;
+padding: 0.7% 5% 0.7% 5%;
 margin-left: 5%;
   background-color: green;
     color: white;
@@ -43,5 +43,16 @@ margin-left: 5%;
   margin-right: 20%;
   display: inline-block;
 float: right;
+
+}
+footer{
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: grey;
+  text-align: center;
 
 }
