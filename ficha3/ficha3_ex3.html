@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <img src="imgs/ganso2.jpg" id="ganso">
+
+  <center>  <button type="button" class="button" id="button">Esconder/mostrar</button>
+    <button type="button" class="button" id="button1">Esconder ao passar</button>
+    <button type="button" class="button" id="button2">mostrar ao passar</button></center>
+
+
+
+    <script>
+    document.getElementById("button").onclick = function() {
+
+    if (document.getElementById("ganso").style.visibility == "visible") {
+        document.getElementById("ganso").style.display = "block";
+          document.getElementById("ganso").style.visibility = "hidden";
+    }
+    else {
+        document.getElementById("ganso").style.display = "block";
+      document.getElementById("ganso").style.visibility = "visible";
+    }
+
+        }
+
+
+          document.getElementById("button1").onmouseover = function() {
+              document.getElementById("ganso").style.display = "none";
+
+
+            }
+            document.getElementById("button2").onmouseover = function() {
+              if (document.getElementById("ganso").style.display == "none") {
+                document.getElementById("ganso").style.display = "block";
+                  document.getElementById("ganso").style.visibility = "visible";
+              }else {
+                document.getElementById("ganso").style.visibility = "visible";
+              }
+
+    }
+    </script>
+  </body>
+  <style media="screen">
+body{
+  background-color:#00BFFF;
+}
+    img{
+      display: block;
+margin-left: auto;
+margin-right: auto;
+     width:400px;
+     height:400px;
+    }
+    .button {
+  background-color: #000080;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button {
+  background-color: white;
+  color: black;
+  border: 2px solid #000080;
+}
+.button:hover {
+  background-color: #000080;
+  color: white;
+}
+  </style>
+</html>
